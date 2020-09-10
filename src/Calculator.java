@@ -8,12 +8,12 @@ public class Calculator {
     JButton [] c=new JButton[11];
     JLabel [] t=new JLabel[2];
     JTextField [] tf=new JTextField[2];
-    String [] bt={"二进制","十进制","0","1","+","-","*","/","平方","开方","="};
+    String [] bt={"Binary","Decimal","0","1","+","-","*","/","pow","sqrt","="};
     private int firstNumber;
     private String symbol;
     private int result;
     public Calculator(){
-        f=new JFrame("二进制计算器");
+        f=new JFrame("Binary Calculator");
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setSize(400,400);
         f.setLayout(new GridLayout(4,1));
@@ -79,7 +79,7 @@ public class Calculator {
                 if(arr[i]==0&&arr[i+1]!=0)
                 {
                     j=i+1;
-                    break one;
+                    break;
                 }
             }
             for(int i=j;i<32;i++ )
